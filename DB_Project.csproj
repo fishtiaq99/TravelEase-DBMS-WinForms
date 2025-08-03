@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EC9AB79-591D-4056-9D91-7C2DB8A51416}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DB_Project</RootNamespace>
+    <AssemblyName>DB_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHomePage.Designer.cs">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginPagecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLoginPagecs.Designer.cs">
+      <DependentUpon>AdminLoginPagecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Config.cs" />
+    <Compile Include="HotelServiceProviderHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelServiceProviderHomePage.Designer.cs">
+      <DependentUpon>HotelServiceProviderHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelServiceProviderLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelServiceProviderLogin.Designer.cs">
+      <DependentUpon>HotelServiceProviderLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\HotelServiceProviderUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\HotelServiceProviderUpdate.Designer.cs">
+      <DependentUpon>HotelServiceProviderUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TourOperatorCreateTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\TourOperatorCreateTrip.Designer.cs">
+      <DependentUpon>TourOperatorCreateTrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TravelerBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\TravelerBooking.Designer.cs">
+      <DependentUpon>TravelerBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TravelerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\TravelerReview.Designer.cs">
+      <DependentUpon>TravelerReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\TravelerUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\TravelerUpdate.Designer.cs">
+      <DependentUpon>TravelerUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorAddActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorAddActivities.Designer.cs">
+      <DependentUpon>TourOperatorAddActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorHomePage.Designer.cs">
+      <DependentUpon>TourOperatorHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorLogin.Designer.cs">
+      <DependentUpon>TourOperatorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorQuery.Designer.cs">
+      <DependentUpon>TourOperatorQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorSignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorSignup.Designer.cs">
+      <DependentUpon>TourOperatorSignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorTripUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorTripUpdate.Designer.cs">
+      <DependentUpon>TourOperatorTripUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TourOperatorUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourOperatorUpdate.Designer.cs">
+      <DependentUpon>TourOperatorUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelEaseDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelEaseDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelerHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelerHomePage.Designer.cs">
+      <DependentUpon>TravelerHomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelerLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelerLoginPage.Designer.cs">
+      <DependentUpon>TravelerLoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelerQueryPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelerQueryPage.Designer.cs">
+      <DependentUpon>TravelerQueryPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Travelersignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Travelersignup.Designer.cs">
+      <DependentUpon>Travelersignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelerWishlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TravelerWishlist.Designer.cs">
+      <DependentUpon>TravelerWishlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebsiteHomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebsiteHomePage.Designer.cs">
+      <DependentUpon>WebsiteHomePage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminHomePage.resx">
+      <DependentUpon>AdminHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginPagecs.resx">
+      <DependentUpon>AdminLoginPagecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelServiceProviderHomePage.resx">
+      <DependentUpon>HotelServiceProviderHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelServiceProviderLogin.resx">
+      <DependentUpon>HotelServiceProviderLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\HotelServiceProviderUpdate.resx">
+      <DependentUpon>HotelServiceProviderUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TourOperatorCreateTrip.resx">
+      <DependentUpon>TourOperatorCreateTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TravelerBooking.resx">
+      <DependentUpon>TravelerBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TravelerReview.resx">
+      <DependentUpon>TravelerReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TravelerUpdate.resx">
+      <DependentUpon>TravelerUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorAddActivities.resx">
+      <DependentUpon>TourOperatorAddActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorHomePage.resx">
+      <DependentUpon>TourOperatorHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorLogin.resx">
+      <DependentUpon>TourOperatorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorQuery.resx">
+      <DependentUpon>TourOperatorQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorSignup.resx">
+      <DependentUpon>TourOperatorSignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorTripUpdate.resx">
+      <DependentUpon>TourOperatorTripUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourOperatorUpdate.resx">
+      <DependentUpon>TourOperatorUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelerHomePage.resx">
+      <DependentUpon>TravelerHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelerLoginPage.resx">
+      <DependentUpon>TravelerLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelerQueryPage.resx">
+      <DependentUpon>TravelerQueryPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Travelersignup.resx">
+      <DependentUpon>Travelersignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TravelerWishlist.resx">
+      <DependentUpon>TravelerWishlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebsiteHomePage.resx">
+      <DependentUpon>WebsiteHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TravelEaseDataSet.xsc">
+      <DependentUpon>TravelEaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet.xss">
+      <DependentUpon>TravelEaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet1.xsc">
+      <DependentUpon>TravelEaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet1.xss">
+      <DependentUpon>TravelEaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet10.xsc">
+      <DependentUpon>TravelEaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet10.xss">
+      <DependentUpon>TravelEaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet11.xsc">
+      <DependentUpon>TravelEaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet11.xss">
+      <DependentUpon>TravelEaseDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet12.xsc">
+      <DependentUpon>TravelEaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet12.xss">
+      <DependentUpon>TravelEaseDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet13.xsc">
+      <DependentUpon>TravelEaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet13.xss">
+      <DependentUpon>TravelEaseDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet14.xsc">
+      <DependentUpon>TravelEaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet14.xss">
+      <DependentUpon>TravelEaseDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet15.xsc">
+      <DependentUpon>TravelEaseDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet15.xss">
+      <DependentUpon>TravelEaseDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet16.xsc">
+      <DependentUpon>TravelEaseDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet16.xss">
+      <DependentUpon>TravelEaseDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet17.xsc">
+      <DependentUpon>TravelEaseDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet17.xss">
+      <DependentUpon>TravelEaseDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet18.xsc">
+      <DependentUpon>TravelEaseDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet18.xss">
+      <DependentUpon>TravelEaseDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet19.xsc">
+      <DependentUpon>TravelEaseDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet19.xss">
+      <DependentUpon>TravelEaseDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet2.xsc">
+      <DependentUpon>TravelEaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet2.xss">
+      <DependentUpon>TravelEaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet20.xsc">
+      <DependentUpon>TravelEaseDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet20.xss">
+      <DependentUpon>TravelEaseDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet21.xsc">
+      <DependentUpon>TravelEaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet21.xss">
+      <DependentUpon>TravelEaseDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet22.xsc">
+      <DependentUpon>TravelEaseDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet22.xss">
+      <DependentUpon>TravelEaseDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet23.xsc">
+      <DependentUpon>TravelEaseDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet23.xss">
+      <DependentUpon>TravelEaseDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet3.xsc">
+      <DependentUpon>TravelEaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet3.xss">
+      <DependentUpon>TravelEaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet4.xsc">
+      <DependentUpon>TravelEaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet4.xss">
+      <DependentUpon>TravelEaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet5.xsc">
+      <DependentUpon>TravelEaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet5.xss">
+      <DependentUpon>TravelEaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet6.xsc">
+      <DependentUpon>TravelEaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet6.xss">
+      <DependentUpon>TravelEaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet7.xsc">
+      <DependentUpon>TravelEaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet7.xss">
+      <DependentUpon>TravelEaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet8.xsc">
+      <DependentUpon>TravelEaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet8.xss">
+      <DependentUpon>TravelEaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet9.xsc">
+      <DependentUpon>TravelEaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="TravelEaseDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelEaseDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelEaseDataSet9.xss">
+      <DependentUpon>TravelEaseDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23i-0696_Fatima Ishtiaq %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purple and White Clean and Professional Resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23i-0696_Fatima Ishtiaq1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homepage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagw10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QueryBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Boating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Response.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
